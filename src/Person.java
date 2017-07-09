@@ -13,38 +13,21 @@ public class Person
     private Date birthDay;
 
 
-    public String getFirstName()
-    {
-        return name.getFirst();
-    }
-    public String getLastName()
-    {
-        return name.getLast();
-    }
     public String getBirthDayString()
     {
         return birthDay.toString();
     }
 
-    public String getFullName() {
-        return getFirstName() + " " + getLastName();
-    }
-
-    public void setFirstName(String fn) {
-        name.setFirst(fn);
-    }
-
-    public void setLastName(String ln) {
-        name.setLast(ln);
+    public String getName() {
+        return name.getName();
     }
 
     public void setBirthDay(int day, int month, int year) {
         birthDay = new Date(day, month, year);
     }
 
-    public void setFullName(String fn, String ln) {
-        setFirstName(fn);
-        setLastName(ln);
+    public void setName(String fn, String ln) {
+        name = new Name(fn, ln);
     }
 
     /**

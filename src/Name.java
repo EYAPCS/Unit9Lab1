@@ -38,4 +38,8 @@ public class Name {
         last = ln;
     }
 
+    public String getName() {
+        return getFirst() + " " + getLast();
+    }
+
 }
